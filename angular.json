@@ -26,13 +26,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -94,14 +89,18 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "tsConfig": ".storybook/tsconfig.json",
+            "browserTarget": "angular13:build",
+            "compodoc": true,
+            "port": 9009
           }
         }
       }
